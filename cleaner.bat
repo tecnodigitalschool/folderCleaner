@@ -22,9 +22,7 @@ del *.cid
 del *.*~
 del *.prt
 
-:: only try to delete if finds 
-:: if exist *.prt del *.prt
-
+:: Optional deletion of other file types
 set /P delfiles=Delete jnl, rpy, dat and sta files (y/n)? 
 if %delfiles%==y del *.jnl
 if %delfiles%==y del *.dat
